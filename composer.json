@@ -1,0 +1,31 @@
+{
+	"name": "codeigniter-packages/installer",
+	"type": "composer-installer",
+	"description": "Composer installer for CodeIgniter",
+	"license": "MIT",
+	"keywords": [
+		"codeigniter","installer", "package","library"
+	],
+	"authors": [
+		{
+			"name": "jooonwood",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://github.com/codeigniter-packages/installer",
+	"support": {
+		"issues": "https://github.com/codeigniter-packages/installer/issues",
+		"source": "https://github.com/codeigniter-packages/installer"
+	},
+	"autoload": {
+		"psr-0": {
+			"Composer\\Installer": "src/"
+		}
+	},
+	"extra": {
+		"class": "Composer\\Installer\\CodeigniterPackages"
+	},
+	"require-dev": {
+		"composer/composer": "^1.3.2"
+	}
+}
