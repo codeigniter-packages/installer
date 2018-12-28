@@ -25,7 +25,8 @@ class CodeigniterPackages extends LibraryInstaller{
         }
 
         
-        $configPath=dirname(dirname(dirname(dirname(dirname(dirname(__file__)))))).'/application/config/packages.php';
+        $filePath = realpath(dirname(__file__));
+        $configPath=substr($filePath,0,stripos($filePath,'vendor')).'application/config/packages.php';
             
             // @HACK to work around the security check in CI config files
         if (!defined('BASEPATH')){
